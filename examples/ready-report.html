@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>macOS Update Readiness Report</title><style>
+:root{--bg:#f6f7f9;--card:#fff;--text:#1d1f23;--muted:#5f6673;--border:#e2e5ea;
+--pass:#1a7f37;--pass-bg:#dafbe1;--warn:#9a6700;--warn-bg:#fff8c5;--fail:#cf222e;--fail-bg:#ffebe9;
+--error:#8250df;--error-bg:#fbefff;--info:#0969da;--info-bg:#ddf4ff;--skip:#57606a;--skip-bg:#eaeef2}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--card:#161b22;--text:#e6edf3;--muted:#8d96a0;
+--border:#30363d;--pass:#3fb950;--pass-bg:#12261e;--warn:#d29922;--warn-bg:#272115;--fail:#f85149;
+--fail-bg:#2d1517;--error:#bc8cff;--error-bg:#231a33;--info:#58a6ff;--info-bg:#121d2f;--skip:#8d96a0;--skip-bg:#1c2128}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:32px 16px}
+h1{margin:0 0 4px;font-size:24px}
+.meta{color:var(--muted);font-size:13px}
+.banner{margin:16px 0;padding:10px 14px;border-radius:8px;background:var(--warn-bg);color:var(--warn);border:1px solid var(--border)}
+.headline{margin:20px 0 0;font-size:18px;font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:12px;margin:16px 0 8px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 14px}
+.card .n{font-size:24px;font-weight:600}
+.card .l{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+section{background:var(--card);border:1px solid var(--border);border-radius:10px;margin:16px 0;overflow:hidden}
+section h2{font-size:15px;margin:0;padding:12px 16px;border-bottom:1px solid var(--border)}
+table{width:100%;border-collapse:collapse}
+td,th{padding:10px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border)}
+tr:last-child td{border-bottom:0}
+th{font-size:12px;color:var(--muted);font-weight:600;text-transform:uppercase}
+td.s{width:90px}td.t{width:28%;font-weight:600}
+.pill{display:inline-block;min-width:56px;text-align:center;padding:2px 8px;border-radius:999px;font-size:12px;font-weight:600;text-transform:uppercase}
+.pass{color:var(--pass);background:var(--pass-bg)}.warn{color:var(--warn);background:var(--warn-bg)}
+.fail{color:var(--fail);background:var(--fail-bg)}.error{color:var(--error);background:var(--error-bg)}
+.info{color:var(--info);background:var(--info-bg)}.skip{color:var(--skip);background:var(--skip-bg)}
+.rem{color:var(--muted);font-size:13px;margin-top:4px}
+details{margin-top:6px}details summary{cursor:pointer;color:var(--muted);font-size:12px}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:2px 12px;margin:6px 0 0;font-size:12px}
+dt{color:var(--muted)}dd{margin:0;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;word-break:break-word}
+footer{color:var(--muted);font-size:12px;margin-top:24px}
+@media (max-width:640px){td,th{padding:8px 10px}td.t{width:auto}}
+</style></head><body><main>
+<header><h1>macOS Update Readiness Report</h1>
+<div class="meta">Generated 2026-01-15T12:00:00+00:00 · macos-update-readiness 1.0.0 · schema 1.0</div></header>
+<div class="banner">Synthetic data: this report was rendered from a replay fixture (replay:ready.json), not collected from a real Mac.</div>
+<div class="headline">Readiness: READY · Updates available: 2</div>
+<div class="cards">
+<div class="card"><div class="n"><span class="pill pass">pass</span></div><div class="l">Overall</div></div>
+<div class="card"><div class="n">4</div><div class="l">pass</div></div>
+<div class="card"><div class="n">0</div><div class="l">warn</div></div>
+<div class="card"><div class="n">0</div><div class="l">fail</div></div>
+<div class="card"><div class="n">0</div><div class="l">error</div></div>
+<div class="card"><div class="n">4</div><div class="l">info</div></div>
+<div class="card"><div class="n">0</div><div class="l">skip</div></div>
+</div>
+<section><h2>Platform</h2><table>
+<thead><tr><th>Status</th><th>Check</th><th>Result</th></tr></thead><tbody>
+<tr><td class="s"><span class="pill info">info</span></td><td class="t">Installed macOS</td><td>macOS 15.1.1 (24B91)<details><summary>Details</summary><dl><dt>product_version</dt><dd>15.1.1</dd><dt>build_version</dt><dd>24B91</dd></dl></details></td></tr>
+<tr><td class="s"><span class="pill info">info</span></td><td class="t">Architecture</td><td>Apple silicon (arm64)<details><summary>Details</summary><dl><dt>architecture</dt><dd>arm64</dd><dt>note</dt><dd>MDM-initiated updates need a bootstrap token or volume owner authorization.</dd></dl></details></td></tr>
+</tbody></table></section>
+<section><h2>Availability</h2><table>
+<thead><tr><th>Status</th><th>Check</th><th>Result</th></tr></thead><tbody>
+<tr><td class="s"><span class="pill info">info</span></td><td class="t">Available updates</td><td>2 update(s) available, 1 requiring restart<details><summary>Details</summary><dl><dt>update_count</dt><dd>2</dd><dt>restart_required</dt><dd>1</dd><dt>major_upgrade</dt><dd>False</dd><dt>updates</dt><dd>[{&quot;label&quot;: &quot;macOS Sequoia 15.2-24C101&quot;, &quot;recommended&quot;: true, &quot;restart_required&quot;: true, &quot;size_gb&quot;: 3.14, &quot;title&quot;: &quot;macOS Sequoia 15.2&quot;, &quot;version&quot;: &quot;15.2&quot;}, {&quot;label&quot;: &quot;Safari18.2SequoiaAuto-18.2&quot;, &quot;recommended&quot;: true, &quot;restart_required&quot;: false, &quot;size_gb&quot;: 0.16, &quot;title&quot;: &quot;Safari&quot;, &quot;version&quot;: &quot;18.2&quot;}]</dd></dl></details></td></tr>
+</tbody></table></section>
+<section><h2>Prerequisites</h2><table>
+<thead><tr><th>Status</th><th>Check</th><th>Result</th></tr></thead><tbody>
+<tr><td class="s"><span class="pill pass">pass</span></td><td class="t">Free space for update</td><td>200.0 GB free; 20.0 GB recommended (minor update minimum)<details><summary>Details</summary><dl><dt>free_gb</dt><dd>200.0</dd><dt>required_gb</dt><dd>20.0</dd><dt>basis</dt><dd>minor update minimum</dd><dt>largest_update_gb</dt><dd>3.14</dd></dl></details></td></tr>
+<tr><td class="s"><span class="pill pass">pass</span></td><td class="t">Power source</td><td>On AC power (100% battery)<details><summary>Details</summary><dl><dt>source</dt><dd>AC Power</dd><dt>battery_percent</dt><dd>100</dd></dl></details></td></tr>
+<tr><td class="s"><span class="pill pass">pass</span></td><td class="t">Bootstrap token</td><td>Bootstrap token escrowed to MDM<details><summary>Details</summary><dl><dt>supported_on_server</dt><dd>True</dd><dt>escrowed_to_server</dt><dd>True</dd></dl></details></td></tr>
+</tbody></table></section>
+<section><h2>Configuration</h2><table>
+<thead><tr><th>Status</th><th>Check</th><th>Result</th></tr></thead><tbody>
+<tr><td class="s"><span class="pill pass">pass</span></td><td class="t">Software Update settings</td><td>Automatic checks on; 4 of 5 explicitly set options enabled<details><summary>Details</summary><dl><dt>settings</dt><dd>{&quot;AutomaticCheckEnabled&quot;: true, &quot;AutomaticDownload&quot;: true, &quot;AutomaticallyInstallMacOSUpdates&quot;: false, &quot;ConfigDataInstall&quot;: true, &quot;CriticalUpdateInstall&quot;: true}</dd><dt>sources</dt><dd>{&quot;AutomaticCheckEnabled&quot;: &quot;local&quot;, &quot;AutomaticDownload&quot;: &quot;local&quot;, &quot;AutomaticallyInstallMacOSUpdates&quot;: &quot;managed&quot;, &quot;ConfigDataInstall&quot;: &quot;local&quot;, &quot;CriticalUpdateInstall&quot;: &quot;local&quot;}</dd><dt>last_successful_check</dt><dd>2026-01-15T03:10:00+00:00</dd><dt>last_check_age_days</dt><dd>0.4</dd></dl></details></td></tr>
+<tr><td class="s"><span class="pill info">info</span></td><td class="t">Managed update deferrals</td><td>MDM deferrals: major upgrades deferred 30 days<details><summary>Details</summary><dl><dt>major_upgrades_deferred</dt><dd>True</dd><dt>major_delay_days</dt><dd>30</dd></dl></details></td></tr>
+</tbody></table></section>
+<footer>Read-only report. No settings were changed while collecting this data.</footer>
+</main></body></html>

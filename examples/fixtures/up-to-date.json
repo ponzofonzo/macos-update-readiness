@@ -1,0 +1,13 @@
+{
+  "description": "SYNTHETIC DATA. Intel desktop that is fully up to date. Values are invented.",
+  "now": "2026-01-15T12:00:00Z",
+  "commands": {
+    "/usr/bin/sw_vers": {"returncode": 0, "stdout": "ProductName:\t\tmacOS\nProductVersion:\t\t15.2\nBuildVersion:\t\t24C101\n"},
+    "/usr/bin/uname -m": {"returncode": 0, "stdout": "x86_64\n"},
+    "/usr/sbin/softwareupdate --list": {"returncode": 0, "stdout": "Software Update Tool\n\nFinding available software\n", "stderr": "No new software available.\n"},
+    "/bin/df -Pk /": {"returncode": 0, "stdout": "Filesystem     1024-blocks      Used Available Capacity  Mounted on\n/dev/disk1s5s1   976490576  10485760 524288000     3%    /\n"},
+    "/usr/bin/pmset -g batt": {"returncode": 0, "stdout": "Now drawing from 'AC Power'\n"},
+    "/usr/bin/profiles status -type bootstraptoken": {"returncode": 0, "stdout": "profiles: Bootstrap Token supported on server: NO\nprofiles: Bootstrap Token escrowed to server: NO\n"},
+    "/usr/bin/plutil -convert xml1 -o - /Library/Preferences/com.apple.SoftwareUpdate.plist": {"returncode": 0, "stdout": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<plist version=\"1.0\"><dict><key>AutomaticCheckEnabled</key><true/><key>LastSuccessfulDate</key><date>2026-01-14T22:00:00Z</date></dict></plist>\n"}
+  }
+}
